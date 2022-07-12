@@ -5,20 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MissbyMissie</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
 </head>
 
 <body>
     <header>
-        <h1>MissbyMissie</h1>
-        <div>
-            <a class="menu-options" href="">Home</a>
-            <a class="menu-options" href="">Jewelery</a>
-            <a class="menu-options" href="">Illustrations</a>
-            <a class="menu-options" href="">Bespoke</a>
-            <a class="menu-options" href="">As seen on</a>
+        <div class="menu-box" id="menu-1">
+            <p class="button">MissbyMissie</p>
         </div>
+
+        <aside id="big-menu">
+            <a href="menu-services">Jewelery</a>
+            <a href="menu-services">Illustrations</a>
+            <a href="menu-services">Bespoke</a>
+            <div class="button" id="big-menu-close">Close</div>
+        </aside>
+
         <div>
             <a class="contact" href="">Contact</a>
             <a class="contact" href="">Log In</a>
@@ -26,46 +32,98 @@
                 src="https://www.pngitem.com/pimgs/m/111-1114675_user-login-person-man-enter-person-login-icon.png"
                 alt="">
         </div>
+
     </header>
     <hr>
 
-    <main>
-        <div>
+    <main class="main-photo">
+
+        <section class="business-name">
             <h2 class="missie-desktop">MissbyMissie</h2>
-            <h2 class="missie-mobile">Missie</h2>
-        </div>
-        <div class="services">
-            <header class="services-box-all image">
-                <h3 class="services-box-title">Jewelery</h3>
-                <p class="services-box-subtitle">bracelets, necklaces, earings etc</p>
-            </header>
-            <header class="services-box-all image">
-                <h3 class="services-box-title">Illustrations</h3>
-                <p class="services-box-subtitle">name cards, wedding places, logos etc</p>
-            </header>
-            <header class="services-box-all image">
-                <h3 class="services-box-title">Bespoke</h3>
-                <p class="services-box-subtitle">Weddings, Logos, dairies etc</p>
-            </header>
-        </div>
+        </section>
+
+        <section class="services services-media">
+            <div class="service-box">
+                <div class="service-titles">
+                    <h3 class="services-box-title">Jewelery</h3>
+                    <p class="services-box-subtitle">Bracelets,necklaces,earrings etc</p>
+                </div>
+                <div class="missie-button">
+                    <h3 class="missie-button-text">Jewelery</h3>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-titles">
+                    <h3 class="services-box-title">Illustrations</h3>
+                    <p class="services-box-subtitle">Calenders, Name cards etc</p>
+                </div>
+                <div class="missie-button">
+                    <h3 class="missie-button-text">Illustrations</h3>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-titles">
+                    <h3 class="services-box-title">Bespoke</h3>
+                    <p class="services-box-subtitle">Weddings, Parties, Jewelery etc</p>
+                </div>
+                <div class="missie-button">
+                    <h3 class="missie-button-text">Bespoke</h3>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+
+    <!--Middle section-->
+    <section class="mbm-container mbm-middle">
+        <div class="mbm-middle-box">
+            <h1 class="mbm-middle-titles">About Missie</h1>
+            <div class="mbm-middle-content-container">
+                <img class="mbm-middle-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/heart.png">
+                <p class="mbm-middle-content">Starting her design life at Faberge she has grown her skills in
+                    finite details and will create you the design of your dreams</p>
+            </div>
+        </div>
+        <div class="mbm-middle-box">
+            <h1 class="mbm-middle-titles">Reviews</h1>
+            <div class="mbm-middle-content-container">
+                <img class="mbm-middle-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/chat.png">
+                <p class="mbm-middle-content">Missie designed most of our wedding name cards and images and we loved it
+                </p>
+            </div>
+        </div>
     </section>
+
+
     <hr>
     <footer>
-        <p>Contact</p>
-        <p>Facebook</p>
-        <p>Instagram</p>
-        <p>Etsy</p>
+        <div class="legal">
+            <h4 class="contact">Help</h4>
+            <p class="contact">Contact</p>
+            <p class="contact">FAQs</p>
+        </div>
+        <div class="legal">
+            <h4 class="contact">Our Policies</h4>
+            <p class="contact">T's & C's</p>
+            <p class="contact">Warranty</p>
+        </div>
+        <div class="legal">
+            <h4 class="contact">Contact</h4>
+            <p class="contact">Email</p>
+            <p class="contact">Telephone</p>
+        </div>
+        <div class="legal">
+            <h4 class="contact">Missie</h4>
+            <p class="contact">About Missie</p>
+            <p class="contact">Portfolio</p>
+        </div>
     </footer>
 
+    <section class="fixed-item">10% your first order</section>
+
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
